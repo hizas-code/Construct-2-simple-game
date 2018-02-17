@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Score" sid="272579422840414" static="0" type="number">0</variable>
+        <event-block sid="794976687015754">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="746443666841910" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="471917772854006" type="Sprite">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="343831214984885">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="419084744135652" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="125452876451321" type="Sprite">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="320634581992160">
+            <conditions>
+                <condition id="2" name="Key is down" sid="531877528366050" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="504845708025085" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="334635202358443" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="2" name="Set acceleration" sid="981503679995745" type="Sprite">
+                    <param id="0" name="Acceleration">500</param>
+                </action>
+                <action id="4" name="Set animation" sid="835452729593614" type="Sprite">
+                    <param id="0" name="Animation">&quot;walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="599135724282926">
+            <conditions>
+                <condition id="2" name="Key is down" sid="486177297736229" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="539009172446298" type="Sprite" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="172792340885355" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="2" name="Set acceleration" sid="597939928477324" type="Sprite">
+                    <param id="0" name="Acceleration">500</param>
+                </action>
+                <action id="4" name="Set animation" sid="152976303170235" type="Sprite">
+                    <param id="0" name="Animation">&quot;walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="184044154592066">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="464100221564183" type="Sprite" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="760749923186213" type="Sprite">
+                    <param id="0" name="Jump strength">500</param>
+                </action>
+                <action id="4" name="Set animation" sid="441373944992456" type="Sprite">
+                    <param id="0" name="Animation">&quot;jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="941766278209862">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="365273632538195" type="Sprite">
+                    <param id="0" name="Object">slimeBlue</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="994546542977656" type="Sprite">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">slimeBlue.Y - 50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="824741048871874" type="slimeBlue" />
+            </actions>
+        </event-block>
+        <event-block sid="120973257078787">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="213570027387874" type="slimeBlue" />
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="3" name="Set movement" sid="149854276601117" type="slimeBlue">
+                    <param id="0" name="Movement">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="949554353501080">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="953225791943592" type="coin">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="447535602789364" type="coin" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

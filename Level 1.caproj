@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Level 1</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>a0p46qb7i80b</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale inner</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="background" sid="438116068894808">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="748744573500217" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\_background\background.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="snowMid" sid="243193278801518">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="375945296130369">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\New folder\Base pack\Tiles\snowMid.png" />
+        </object-type>
+        <object-type name="snowCenter" sid="243552376952907">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowCenter.png" />
+        </object-type>
+        <object-type name="snowHillRight" sid="581525919616779">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="912337577033718">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHillRight.png" />
+        </object-type>
+        <object-type name="snowHillRight2" sid="939869526382971">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHillRight2.png" />
+        </object-type>
+        <object-type name="snowCliffLeft" sid="551098803493519">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowCliffLeft.png" />
+        </object-type>
+        <object-type name="snowCliffLeftAlt" sid="707449925048580">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowCliffLeftAlt.png" />
+        </object-type>
+        <object-type name="snowCliffRight" sid="761091203614472">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowCliffRight.png" />
+        </object-type>
+        <object-type name="snowCilffRightAlt" sid="658245798827214">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="936920351931837">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\New folder\Base pack\Tiles\snowCliffRightAlt.png" />
+        </object-type>
+        <object-type name="snowHalf" sid="168919301401290">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHalf.png" />
+        </object-type>
+        <object-type name="snowHalfLeft" sid="219980686984532">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHalfLeft.png" />
+        </object-type>
+        <object-type name="snowHalfMid" sid="874363432774609">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHalfMid.png" />
+        </object-type>
+        <object-type name="snowHalfRight" sid="308444588909487">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHalfRight.png" />
+        </object-type>
+        <object-type name="snowHillLeft" sid="924083653645613">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHillLeft.png" />
+        </object-type>
+        <object-type name="snowHillLeft2" sid="461794951648438">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowHillLeft2.png" />
+        </object-type>
+        <object-type name="snowLeft" sid="574368592871787">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowLeft.png" />
+        </object-type>
+        <object-type name="snowRight" sid="327796859933846">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowRight.png" />
+        </object-type>
+        <object-type name="snow" sid="993114874497155">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snow.png" />
+        </object-type>
+        <object-type name="snowCenterRounded" sid="468205915912240">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Base pack\Tiles\snowCenter_rounded.png" />
+        </object-type>
+        <object-type name="igloo" sid="334558270876518">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Ice pack\igloo.png" />
+        </object-type>
+        <object-type name="iglooAlt" sid="728331696159990">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Ice pack\iglooAlt.png" />
+        </object-type>
+        <object-type name="iglooDoor" sid="740590349282434">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Ice pack\iglooDoor.png" />
+        </object-type>
+        <object-type name="iglooRoof" sid="895870902710254">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Ice pack\iglooRoof.png" />
+        </object-type>
+        <object-type name="iglooRoofLeft" sid="117821412607014">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Ice pack\iglooRoofLeft.png" />
+        </object-type>
+        <object-type name="iglooRoofRight" sid="942417807850657">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Ice pack\iglooRoofRight.png" />
+        </object-type>
+        <object-type name="cloud1" sid="635971237115616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821008350088383" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="D:\New folder\Base pack\Items\cloud1.png">
+                        <collision-poly>
+                            <point x="0.179688" y="0.323944" />
+                            <point x="0.5" y="0" />
+                            <point x="0.789063" y="0.380282" />
+                            <point x="0.9375" y="0.492958" />
+                            <point x="0.945313" y="0.901408" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0546875" y="0.901408" />
+                            <point x="0.101563" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cloud2" sid="542008461082466">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="273792780288334" speed="5">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="D:\New folder\Base pack\Items\cloud2.png">
+                        <collision-poly>
+                            <point x="0.224806" y="0.408451" />
+                            <point x="0.496124" y="0" />
+                            <point x="0.782946" y="0.394366" />
+                            <point x="0.790698" y="0.492958" />
+                            <point x="0.945736" y="0.901408" />
+                            <point x="0.496124" y="1" />
+                            <point x="0.0542636" y="0.901408" />
+                            <point x="0.108527" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cloud3" sid="614559584453885">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171730404871769" speed="5">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="D:\New folder\Base pack\Items\cloud3.png">
+                        <collision-poly>
+                            <point x="0.155039" y="0.28169" />
+                            <point x="0.496124" y="0" />
+                            <point x="0.875969" y="0.225352" />
+                            <point x="0.976744" y="0.492958" />
+                            <point x="0.945736" y="0.901408" />
+                            <point x="0.496124" y="1" />
+                            <point x="0.0542636" y="0.901408" />
+                            <point x="0.108527" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flagBlue" sid="663020820447758">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575846340845084" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Items\flagBlue.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0.228571" />
+                            <point x="0.771429" y="0.228571" />
+                            <point x="0.657143" y="0.5" />
+                            <point x="0.571429" y="0.571429" />
+                            <point x="0.5" y="0.614286" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="flagBlue2" sid="103603461077462">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762263355542691" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Items\flagBlue2.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0.0857143" />
+                            <point x="0.757143" y="0.242857" />
+                            <point x="0.3" y="0.5" />
+                            <point x="0.471429" y="0.471429" />
+                            <point x="0.5" y="0.471429" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Items\flagBlue.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0.228571" />
+                            <point x="0.771429" y="0.228571" />
+                            <point x="0.657143" y="0.5" />
+                            <point x="0.571429" y="0.571429" />
+                            <point x="0.5" y="0.614286" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="401380032339576">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="311727978185783">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="417625712870641">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758411079610474" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\kenney_platformercharacters\PNG\Adventurer\Poses\adventurer_stand.png">
+                        <collision-poly>
+                            <point x="0.16875" y="0.268182" />
+                            <point x="0.5125" y="0.181818" />
+                            <point x="0.78125" y="0.268182" />
+                            <point x="0.86875" y="0.704546" />
+                            <point x="0.821875" y="1" />
+                            <point x="0.225" y="1" />
+                            <point x="0.125" y="0.763636" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="114741970941466" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\kenney_platformercharacters\PNG\Adventurer\Poses\adventurer_walk1.png">
+                        <collision-poly>
+                            <point x="0.16875" y="0.268182" />
+                            <point x="0.5125" y="0.181818" />
+                            <point x="0.78125" y="0.268182" />
+                            <point x="0.86875" y="0.704546" />
+                            <point x="0.915625" y="0.863636" />
+                            <point x="0.739063" y="1" />
+                            <point x="0.35" y="1" />
+                            <point x="0.159375" y="0.863636" />
+                            <point x="0.125" y="0.763636" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\kenney_platformercharacters\PNG\Adventurer\Poses\adventurer_walk2.png">
+                        <collision-poly>
+                            <point x="0.16875" y="0.268182" />
+                            <point x="0.5125" y="0.181818" />
+                            <point x="0.78125" y="0.268182" />
+                            <point x="0.86875" y="0.704546" />
+                            <point x="0.821875" y="1" />
+                            <point x="0.225" y="1" />
+                            <point x="0.125" y="0.763636" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="344786217314378" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\kenney_platformercharacters\PNG\Adventurer\Poses\adventurer_jump.png">
+                        <collision-poly>
+                            <point x="0.16875" y="0.268182" />
+                            <point x="0.5125" y="0.181818" />
+                            <point x="0.78125" y="0.268182" />
+                            <point x="0.86875" y="0.704546" />
+                            <point x="0.821875" y="1" />
+                            <point x="0.225" y="1" />
+                            <point x="0.125" y="0.763636" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="slimeBlue" sid="871122489317736">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="588987664469769">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="268821778081192">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="345148659505270">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="128638086932241" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\Project\Game\New folder\Enemy sprites\slimeBlue.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.205882" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.857143" y="0.205882" />
+                            <point x="0.979592" y="0.5" />
+                            <point x="0.938776" y="0.911765" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.0612245" y="0.911765" />
+                            <point x="0.0204082" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="429558973664430">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="snowHillRight4" sid="788871657648161">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544146679743327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="snowHillRight3" sid="621323787853711">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="121782397723768">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="932094584269293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Project\Game\New folder\Base pack\Tiles\snowHillRight.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin" sid="306351877411387">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="390745005351122" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Project\Game\New folder\Items\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Family1" plugin-id="TiledBg" sid="599954336851228">
+            <members>
+                <member>snow</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid" sid="322759759322792">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Level 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="33" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
