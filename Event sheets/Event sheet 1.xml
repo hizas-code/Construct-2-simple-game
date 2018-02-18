@@ -114,5 +114,16 @@
                 <action id="-9" name="Destroy" sid="447535602789364" type="coin" />
             </actions>
         </event-block>
+        <event-block sid="406782842780150">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="174413202540797" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="743260803891407" type="camera">
+                    <param id="0" name="X">lerp(Self.X, Sprite.X , 0.03)</param>
+                    <param id="1" name="Y">lerp(Self.Y, Sprite.Y - 150, 0.03)</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
