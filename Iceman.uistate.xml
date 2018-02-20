@@ -25,7 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Level 2/" />
-        <folder expanded="0" path="object-folder/Level 1/" />
+        <folder expanded="1" path="object-folder/Level 1/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
@@ -35,7 +35,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/leftHillTile/" />
         <folder expanded="1" path="animation-folder/rightHillTile/" />
         <folder expanded="1" path="animation-folder/Camera/" />
-        <folder expanded="1" path="animation-folder/background/" />
         <folder expanded="1" path="animation-folder/backgroundLeft/" />
         <folder expanded="1" path="animation-folder/backgroundRight/" />
         <folder expanded="1" path="animation-folder/cloud1/" />
@@ -43,22 +42,42 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/cloud3/" />
         <folder expanded="1" path="animation-folder/snowHillLeft3/" />
         <folder expanded="1" path="animation-folder/snowHillRight3/" />
+        <folder expanded="1" path="animation-folder/enemyslimeBlue/" />
+        <folder expanded="1" path="animation-folder/enemyslimeBlueKey/" />
+        <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/Enemy2/" />
+        <folder expanded="1" path="animation-folder/Enemy3/" />
+        <folder expanded="1" path="animation-folder/Enemy4/" />
+        <folder expanded="1" path="animation-folder/SnowHalf/" />
+        <folder expanded="1" path="animation-folder/SnowHalfLeft/" />
+        <folder expanded="1" path="animation-folder/SnowHalfMid/" />
+        <folder expanded="1" path="animation-folder/SnowHalfRight/" />
+        <folder expanded="1" path="animation-folder/SnowSlice12/" />
+        <folder expanded="1" path="animation-folder/SnowSlice13/" />
+        <folder expanded="1" path="animation-folder/SnowSlice14/" />
+        <folder expanded="1" path="animation-folder/SnowSlice15/" />
+        <folder expanded="1" path="animation-folder/SnowSlice16/" />
         <folder expanded="1" path="animation-folder/flagBlue/" />
-        <folder expanded="1" path="animation-folder/flagBlue2/" />
         <folder expanded="1" path="animation-folder/Protagonist/" />
-        <folder expanded="1" path="animation-folder/slimeBlue/" />
         <folder expanded="1" path="animation-folder/coin/" />
-<<<<<<< HEAD:Level 1.uistate.xml
-        <folder expanded="1" path="animation-folder/snowHillLeft3/" />
-        <folder expanded="1" path="animation-folder/camera/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/snowHalf2/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/bg/" />
-=======
->>>>>>> e0cfa7d8665b51610011d224d585f52fa1ee243b:Iceman.uistate.xml
+        <folder expanded="1" path="animation-folder/KeyBlue/" />
+        <folder expanded="1" path="animation-folder/KeyYellow/" />
+        <folder expanded="1" path="animation-folder/flagYellow/" />
+        <folder expanded="1" path="animation-folder/LockBlue/" />
+        <folder expanded="1" path="animation-folder/LockYellow/" />
+        <folder expanded="1" path="animation-folder/Exit/" />
+        <folder expanded="1" path="animation-folder/Plant/" />
+        <folder expanded="1" path="animation-folder/PlantAlt/" />
+        <folder expanded="1" path="animation-folder/Rock/" />
+        <folder expanded="1" path="animation-folder/RockAlt/" />
+        <folder expanded="1" path="animation-folder/SnowBallBigGround/" />
+        <folder expanded="1" path="animation-folder/SnowBallGround/" />
+        <folder expanded="1" path="animation-folder/SnowHill/" />
+        <folder expanded="1" path="animation-folder/SnowWave/" />
+        <folder expanded="1" path="animation-folder/SpikesBottom/" />
+        <folder expanded="1" path="animation-folder/Heart/" />
+        <folder expanded="1" path="animation-folder/Glass/" />
+        <folder expanded="1" path="animation-folder/LadderTop/" />
+        <folder expanded="1" path="animation-folder/LadderMid/" />
     </folders-expanded>
 </c2uistate>

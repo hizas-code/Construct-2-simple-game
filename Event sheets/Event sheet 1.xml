@@ -83,15 +83,15 @@
         <event-block sid="941766278209862">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="365273632538195" type="Protagonist">
-                    <param id="0" name="Object">slimeBlue</param>
+                    <param id="0" name="Object">enemyslimeBlue</param>
                 </condition>
                 <condition id="-2" name="Compare Y" sid="994546542977656" type="Protagonist">
                     <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">slimeBlue.Y - 50</param>
+                    <param id="1" name="Y co-ordinate">enemyslimeBlue.Y - 50</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="824741048871874" type="slimeBlue" />
+                <action id="-9" name="Destroy" sid="824741048871874" type="enemyslimeBlue" />
             </actions>
         </event-block>
         <event-block sid="949554353501080">

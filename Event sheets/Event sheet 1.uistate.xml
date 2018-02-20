@@ -8,7 +8,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <conditions-column>120</conditions-column>
     <actions-namecolumn>21</actions-namecolumn>
     <condition-namecolumns>
-        <nest>40</nest>
+        <nest>20</nest>
         <nest>18</nest>
     </condition-namecolumns>
     <events />
