@@ -94,16 +94,6 @@
                 <action id="-9" name="Destroy" sid="824741048871874" type="enemyslimeBlue" />
             </actions>
         </event-block>
-        <event-block sid="949554353501080">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="953225791943592" type="coin">
-                    <param id="0" name="Object">Protagonist</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="447535602789364" type="coin" />
-            </actions>
-        </event-block>
         <event-block sid="406782842780150">
             <conditions>
                 <condition id="-1" name="Every tick" sid="174413202540797" type="System" />
