@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -414,10 +415,6 @@
             <object-type name="TiledBackground29" sid="237777374960514">
                 <plugin id="TiledBg" />
                 <texture original-source="D:\New folder\Building pack\roofGreyTopRight.png" />
-            </object-type>
-            <object-type name="sea" sid="433548922970145">
-                <plugin id="TiledBg" />
-                <texture original-source="D:\New folder\Base pack\Tiles\liquidWaterTop_mid.png" />
             </object-type>
             <object-type name="TiledBackground30" sid="720134023248650">
                 <plugin id="TiledBg" />
@@ -1037,6 +1034,24 @@
                 <plugin id="TiledBg" />
                 <texture original-source="D:\New folder\Tile extension pack\PNG Snow\slice22_22.png" />
             </object-type>
+            <object-type name="sea" sid="761585966728521">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680659350835018" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Project\Game\New folder\Platformer Art Complete Pack\Base pack\Tiles\liquidWaterTop_mid.png">
+                            <collision-poly>
+                                <point x="0.442857" y="0.442857" />
+                                <point x="0.5" y="0.414286" />
+                                <point x="0.628571" y="0.371429" />
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="flagBlue" sid="103603461077462">
             <plugin id="Sprite" />
@@ -1513,6 +1528,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="320646662198918">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
