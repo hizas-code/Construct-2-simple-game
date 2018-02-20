@@ -1540,7 +1540,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="320646662198918">
+        <object-type name="Score" sid="320646662198918">
             <plugin id="Text" />
         </object-type>
     </object-folder>
