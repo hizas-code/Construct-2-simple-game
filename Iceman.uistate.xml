@@ -10,9 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
+<<<<<<< HEAD:Level 1.uistate.xml
         <layout order="0">Level 1</layout>
         <layout active="1" order="2">Level 3</layout>
+=======
+        <layout active="1" order="0">Level 1</layout>
+        <layout order="2">Level 2</layout>
+>>>>>>> e0cfa7d8665b51610011d224d585f52fa1ee243b:Iceman.uistate.xml
         <event-sheet order="1">Event sheet 1</event-sheet>
+        <event-sheet order="3">Event sheet 2</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -20,27 +26,34 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
-        <family expanded="0" name="Family1" />
-    </families-expanded>
+    <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Level 2/" />
+        <folder expanded="0" path="object-folder/Level 1/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/leftHillTile/" />
+        <folder expanded="1" path="animation-folder/rightHillTile/" />
+        <folder expanded="1" path="animation-folder/Camera/" />
         <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/backgroundLeft/" />
+        <folder expanded="1" path="animation-folder/backgroundRight/" />
         <folder expanded="1" path="animation-folder/cloud1/" />
         <folder expanded="1" path="animation-folder/cloud2/" />
         <folder expanded="1" path="animation-folder/cloud3/" />
+        <folder expanded="1" path="animation-folder/snowHillLeft3/" />
+        <folder expanded="1" path="animation-folder/snowHillRight3/" />
         <folder expanded="1" path="animation-folder/flagBlue/" />
         <folder expanded="1" path="animation-folder/flagBlue2/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Protagonist/" />
         <folder expanded="1" path="animation-folder/slimeBlue/" />
-        <folder expanded="1" path="animation-folder/snowHillRight3/" />
         <folder expanded="1" path="animation-folder/coin/" />
+<<<<<<< HEAD:Level 1.uistate.xml
         <folder expanded="1" path="animation-folder/snowHillLeft3/" />
         <folder expanded="1" path="animation-folder/camera/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
@@ -50,5 +63,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite6/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/bg/" />
+=======
+>>>>>>> e0cfa7d8665b51610011d224d585f52fa1ee243b:Iceman.uistate.xml
     </folders-expanded>
 </c2uistate>

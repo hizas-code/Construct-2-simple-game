@@ -2,5 +2,17 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
-    <events />
+    <events>
+        <event-block sid="885540512455820">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="600233110721317" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="992011532732213" type="Camera">
+                    <param id="0" name="X">lerp(Self.X, Protagonist.X, 0.03)</param>
+                    <param id="1" name="Y">lerp(Self.Y, Protagonist.Y -150, 0.03)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
