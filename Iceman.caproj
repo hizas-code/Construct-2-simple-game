@@ -21,6 +21,7 @@
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -641,6 +642,17 @@
             </object-type>
             <object-type name="Enemy2" sid="949288260295017">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="108256191008215">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="990046831992316">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="827282643734397">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514980323860710" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\snail.png">
@@ -700,6 +712,14 @@
             </object-type>
             <object-type name="Enemy3" sid="569443501213745">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="911810327004129">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="324271164323601">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="604357270544177" speed="5">
                         <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\piranha.png">
@@ -715,19 +735,7 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="2" loop="0" name="swim" pingpong="0" repeatcount="1" repeatto="0" sid="276682239755937" speed="5">
-                        <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\piranha.png">
-                            <collision-poly>
-                                <point x="0.177778" y="0.133333" />
-                                <point x="0.488889" y="0" />
-                                <point x="0.777778" y="0.166667" />
-                                <point x="0.933333" y="0.5" />
-                                <point x="0.577778" y="0.683333" />
-                                <point x="0.488889" y="0.983333" />
-                                <point x="0.244444" y="0.816667" />
-                                <point x="0.0888889" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                    <animation framecount="1" loop="0" name="swim" pingpong="0" repeatcount="1" repeatto="0" sid="276682239755937" speed="5">
                         <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\piranha_down.png">
                             <collision-poly>
                                 <point x="0.377778" y="0.283333" />
@@ -745,6 +753,17 @@
             </object-type>
             <object-type name="Enemy4" sid="170900324468845">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="958265291145335">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="437610170216673">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="517304972374753">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="904276561903067" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\Player Green\playerGreen_up1.png">
@@ -805,8 +824,8 @@
             <object-type name="SnowHalf" sid="959272569116619">
                 <plugin id="Sprite" />
                 <behaviors>
-                    <behavior-type name="Solid" sid="924545129267370">
-                        <behavior id="solid" />
+                    <behavior-type name="Jumpthru" sid="518250012015628">
+                        <behavior id="jumpthru" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -828,8 +847,8 @@
             <object-type name="SnowHalfLeft" sid="238326823150818">
                 <plugin id="Sprite" />
                 <behaviors>
-                    <behavior-type name="Solid" sid="510850323780361">
-                        <behavior id="solid" />
+                    <behavior-type name="Jumpthru" sid="273527457584627">
+                        <behavior id="jumpthru" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -851,8 +870,8 @@
             <object-type name="SnowHalfMid" sid="419879375963072">
                 <plugin id="Sprite" />
                 <behaviors>
-                    <behavior-type name="Solid" sid="916562642798616">
-                        <behavior id="solid" />
+                    <behavior-type name="Jumpthru" sid="403387232192578">
+                        <behavior id="jumpthru" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -873,8 +892,8 @@
             <object-type name="SnowHalfRight" sid="483842843124914">
                 <plugin id="Sprite" />
                 <behaviors>
-                    <behavior-type name="Solid" sid="138463276034084">
-                        <behavior id="solid" />
+                    <behavior-type name="Jumpthru" sid="959770485107512">
+                        <behavior id="jumpthru" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -978,6 +997,11 @@
             </object-type>
             <object-type name="SnowSlice6" sid="914629434173846">
                 <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="342395278528619">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="D:\New folder\Tile extension pack\PNG Snow\slice24_24.png" />
             </object-type>
             <object-type name="SnowSlice5" sid="340523875825528">
@@ -1105,13 +1129,13 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758411079610474" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\kenney_platformercharacters\PNG\Adventurer\Poses\adventurer_stand.png">
                         <collision-poly>
-                            <point x="0.16875" y="0.268182" />
-                            <point x="0.5125" y="0.181818" />
-                            <point x="0.78125" y="0.268182" />
-                            <point x="0.86875" y="0.704546" />
-                            <point x="0.821875" y="1" />
-                            <point x="0.225" y="1" />
-                            <point x="0.125" y="0.763636" />
+                            <point x="0.2" y="0.245455" />
+                            <point x="0.5" y="0.245454" />
+                            <point x="0.78125" y="0.245455" />
+                            <point x="0.79375" y="0.700001" />
+                            <point x="0.796875" y="1" />
+                            <point x="0.2125" y="1" />
+                            <point x="0.20625" y="0.695454" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1124,9 +1148,9 @@
                             <point x="0.86875" y="0.704546" />
                             <point x="0.915625" y="0.863636" />
                             <point x="0.739063" y="1" />
-                            <point x="0.35" y="1" />
-                            <point x="0.159375" y="0.863636" />
-                            <point x="0.125" y="0.763636" />
+                            <point x="0.5" y="0.854546" />
+                            <point x="0.340625" y="0.995454" />
+                            <point x="0.14375" y="0.868181" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\kenney_platformercharacters\PNG\Adventurer\Poses\adventurer_walk2.png">
@@ -1546,9 +1570,48 @@
         </object-type>
         <object-type name="Score" sid="578967940402044">
             <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="521000399358192">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="scoreCoin" sid="664552294830717">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="553113687858803">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="799228093656585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Project\Game\New folder\Items\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Enemy" plugin-id="Sprite" sid="204503599564974">
+            <members>
+                <member>Enemy2</member>
+                <member>Enemy3</member>
+                <member>Enemy4</member>
+                <member>enemyslimeBlue</member>
+                <member>enemyslimeBlueKey</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout>Level 1.xml</layout>
         <layout>Level 2.xml</layout>
@@ -1558,7 +1621,7 @@
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="86" />
+        <global-instance type="Keyboard" uid="170" />
     </global-instances>
     <sounds-folder />
     <music-folder />

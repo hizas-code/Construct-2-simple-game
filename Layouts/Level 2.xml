@@ -62,7 +62,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="underTile" uid="23">
+                <instance type="underTile" uid="72">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -82,7 +82,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="rightHillTile" uid="72">
+                <instance type="rightHillTile" uid="73">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -111,7 +111,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="basicMiddleTile" uid="73">
+                <instance type="basicMiddleTile" uid="74">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -138,7 +138,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="rightHillTile" uid="74">
+                <instance type="rightHillTile" uid="75">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -167,7 +167,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="rightHillConnector" uid="75">
+                <instance type="rightHillConnector" uid="76">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -187,7 +187,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="basicMiddleTile" uid="76">
+                <instance type="basicMiddleTile" uid="77">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -214,7 +214,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="rightHillConnector" uid="77">
+                <instance type="rightHillConnector" uid="78">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -234,7 +234,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="underTile" uid="78">
+                <instance type="underTile" uid="79">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -254,7 +254,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Protagonist" uid="79">
+                <instance type="Protagonist" uid="80">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -297,7 +297,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Camera" uid="80">
+                <instance type="Camera" uid="82">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -326,7 +326,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemyslimeBlue" uid="82">
+                <instance type="enemyslimeBlue" uid="84">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -382,7 +382,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="basicTile" uid="84">
+                <instance type="basicTile" uid="86">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
