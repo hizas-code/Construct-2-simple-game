@@ -230,6 +230,11 @@
             </object-type>
             <object-type name="snowCenter" sid="243552376952907">
                 <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="699540808574409">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="D:\New folder\Base pack\Tiles\snowCenter.png" />
             </object-type>
             <object-type name="snowCenterRounded" sid="468205915912240">
@@ -313,6 +318,11 @@
             </object-type>
             <object-type name="snowHillRight2" sid="939869526382971">
                 <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="517096173332931">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="D:\New folder\Base pack\Tiles\snowHillRight2.png" />
             </object-type>
             <object-type name="snowHillRight3" sid="621323787853711">
@@ -1063,6 +1073,11 @@
             </object-type>
             <object-type name="SnowSlice4" sid="798712897128943">
                 <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="287289390495153">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <texture original-source="D:\New folder\Tile extension pack\PNG Snow\slice22_22.png" />
             </object-type>
             <object-type name="sea" sid="761585966728521">
@@ -1254,6 +1269,11 @@
         </object-type>
         <object-type name="LockBlue" sid="359633138800082">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="407341319860484">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="202221590715931" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Tiles\lock_blue.png">
@@ -1476,7 +1496,7 @@
                     </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="die" pingpong="0" repeatcount="1" repeatto="0" sid="312602441365606" speed="5">
-                    <frame duration="1" hotspotX="0.514286" hotspotY="0.508475" original-source="D:\New folder\Items\hud_heartEmpty.png">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heartEmpty.png">
                         <collision-poly>
                             <point x="0.0943396" y="0.111111" />
                             <point x="0.490566" y="0.0666667" />
@@ -1600,6 +1620,104 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Canon" sid="671075339646188">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947245724036814" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="D:\New folder\Items\Canon.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.247788" />
+                            <point x="0.8" y="0.230089" />
+                            <point x="0.969231" y="0.495575" />
+                            <point x="0.730769" y="0.690265" />
+                            <point x="0.5" y="0.973451" />
+                            <point x="0.0461538" y="0.946903" />
+                            <point x="0.292308" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WaterDeep" sid="307434466409257">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\New folder\Ice pack\iceWaterDeep.png" />
+        </object-type>
+        <object-type name="hud_heart3" sid="339553065458864">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="625585626116061" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart3.png">
+                        <collision-poly>
+                            <point x="0.030303" y="0.111111" />
+                            <point x="0.49697" y="0.0444444" />
+                            <point x="0.957576" y="0.155556" />
+                            <point x="0.963636" y="0.488889" />
+                            <point x="0.915152" y="0.688889" />
+                            <point x="0.49697" y="0.977778" />
+                            <point x="0.0666667" y="0.755556" />
+                            <point x="0.00606061" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hud_heart4" sid="203355360846716">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341313786767241" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart2.png">
+                        <collision-poly>
+                            <point x="0.030303" y="0.111111" />
+                            <point x="0.49697" y="0.0444444" />
+                            <point x="0.957576" y="0.155556" />
+                            <point x="0.969697" y="0.488889" />
+                            <point x="0.921212" y="0.711111" />
+                            <point x="0.49697" y="0.977778" />
+                            <point x="0.0666667" y="0.755556" />
+                            <point x="0.00606061" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hud_heart1" sid="468104116878630">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306245854898933" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart1.png">
+                        <collision-poly>
+                            <point x="0.030303" y="0.111111" />
+                            <point x="0.49697" y="0.0444444" />
+                            <point x="0.957576" y="0.155556" />
+                            <point x="0.969697" y="0.488889" />
+                            <point x="0.921212" y="0.711111" />
+                            <point x="0.49697" y="0.977778" />
+                            <point x="0.0666667" y="0.755556" />
+                            <point x="0.00606061" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hud_heart0" sid="737775804047149">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385535699004756" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart0.png">
+                        <collision-poly>
+                            <point x="0.030303" y="0.111111" />
+                            <point x="0.49697" y="0.0444444" />
+                            <point x="0.957576" y="0.155556" />
+                            <point x="0.969697" y="0.488889" />
+                            <point x="0.921212" y="0.711111" />
+                            <point x="0.49697" y="0.977778" />
+                            <point x="0.0666667" y="0.755556" />
+                            <point x="0.00606061" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Enemy" plugin-id="Sprite" sid="204503599564974">
@@ -1625,11 +1743,13 @@
     </families>
     <layout-folder>
         <layout>Level 1.xml</layout>
+        <layout>King Level 1.xml</layout>
         <layout>Level 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="170" />
