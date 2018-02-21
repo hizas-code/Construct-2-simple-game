@@ -1610,6 +1610,17 @@
                 <member>enemyslimeBlue</member>
                 <member>enemyslimeBlueKey</member>
             </members>
+            <behaviors>
+                <behavior-type name="EnemySolid" sid="880387115956954">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Flag" plugin-id="Sprite" sid="404974787184239">
+            <members>
+                <member>flagBlue</member>
+                <member>flagYellow</member>
+            </members>
         </family>
     </families>
     <layout-folder>

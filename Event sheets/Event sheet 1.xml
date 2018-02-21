@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="Checkpoint_Y" sid="743297185442662" static="0" type="number">0</variable>
+        <variable constant="0" name="Checkpoint_X" sid="506990786074724" static="0" type="number">0</variable>
+        <variable constant="0" name="Flag_ID" sid="778827238692775" static="0" type="number">0</variable>
         <variable constant="0" name="Protagonist_State" sid="961885528563603" static="0" type="number">1</variable>
         <variable constant="0" name="Heart" sid="150415761162828" static="0" type="number">3</variable>
         <variable constant="0" name="Score" sid="272579422840414" static="0" type="number">0</variable>
@@ -82,53 +85,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="941766278209862">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="365273632538195" type="Protagonist">
-                    <param id="0" name="Object">enemyslimeBlue</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="994546542977656" type="Protagonist">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">enemyslimeBlue.Y - 50</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="824741048871874" type="enemyslimeBlue" />
-            </actions>
-        </event-block>
-        <event-block sid="265233160682118">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="771496447769803" type="Protagonist">
-                    <param id="0" name="Object">enemyslimeBlue</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="851201194201641" type="Protagonist">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="Y co-ordinate">enemyslimeBlue.Y - 50</param>
-                </condition>
-                <condition id="-8" name="Compare two values" sid="210672618258735" type="System">
-                    <param id="0" name="First value">Protagonist_State</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Second value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="973431001976431" type="System">
-                    <param id="0" name="Variable">Heart</param>
-                    <param id="1" name="Value">-1</param>
-                </action>
-                <action id="-9" name="Set value" sid="110223615732404" type="System">
-                    <param id="0" name="Variable">Protagonist_State</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-16" name="Wait" sid="206890655256253" type="System">
-                    <param id="0" name="Seconds">2</param>
-                </action>
-                <action id="-9" name="Set value" sid="724218595626547" type="System">
-                    <param id="0" name="Variable">Protagonist_State</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="630090102224466">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="535117925930792" type="Protagonist">
@@ -136,7 +92,7 @@
                 </condition>
                 <condition id="-2" name="Compare Y" sid="731134819911037" type="Protagonist">
                     <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">enemyslimeBlueKey.Y - 50</param>
+                    <param id="1" name="Y co-ordinate">Enemy.Y - 50</param>
                 </condition>
             </conditions>
             <actions>
@@ -150,7 +106,7 @@
                 </condition>
                 <condition id="-2" name="Compare Y" sid="383894407824117" type="Protagonist">
                     <param id="0" name="Comparison">5</param>
-                    <param id="1" name="Y co-ordinate">enemyslimeBlueKey.Y - 50</param>
+                    <param id="1" name="Y co-ordinate">Enemy.Y - 50</param>
                 </condition>
                 <condition id="-8" name="Compare two values" sid="826089604910742" type="System">
                     <param id="0" name="First value">Protagonist_State</param>
@@ -283,8 +239,8 @@
                     <param id="0" name="Seconds">3</param>
                 </action>
                 <action id="-3" name="Set position" sid="650720728684043" type="Protagonist">
-                    <param id="0" name="X">flagBlue.X - 30</param>
-                    <param id="1" name="Y">flagBlue.Y</param>
+                    <param id="0" name="X">Checkpoint_X</param>
+                    <param id="1" name="Y">Checkpoint_Y</param>
                 </action>
                 <action id="-16" name="Wait" sid="958643193785800" type="System">
                     <param id="0" name="Seconds">3</param>
@@ -322,6 +278,27 @@
                 <action id="4" name="Set animation" sid="315946829839369" type="Enemy3">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="728494084105467">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="280587437077877" type="Flag">
+                    <param id="0" name="Object">Protagonist</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="700889153534715" type="System">
+                    <param id="0" name="Variable">Flag_ID</param>
+                    <param id="1" name="Value">Flag.IID</param>
+                </action>
+                <action id="-9" name="Set value" sid="109201620207843" type="System">
+                    <param id="0" name="Variable">Checkpoint_X</param>
+                    <param id="1" name="Value">Flag.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="356894196837632" type="System">
+                    <param id="0" name="Variable">Checkpoint_Y</param>
+                    <param id="1" name="Value">Flag.y</param>
                 </action>
             </actions>
         </event-block>
