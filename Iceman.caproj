@@ -14,10 +14,10 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="filechooser" version="1">File chooser</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -153,6 +153,11 @@
             </object-type>
             <object-type name="cloud1" sid="635971237115616">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="328826283009317">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821008350088383" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="D:\New folder\Base pack\Items\cloud1.png">
@@ -172,6 +177,11 @@
             </object-type>
             <object-type name="cloud2" sid="542008461082466">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="532704653746256">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="273792780288334" speed="5">
                         <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="D:\New folder\Base pack\Items\cloud2.png">
@@ -191,6 +201,11 @@
             </object-type>
             <object-type name="cloud3" sid="614559584453885">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="276484651230463">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171730404871769" speed="5">
                         <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="D:\New folder\Base pack\Items\cloud3.png">
@@ -461,88 +476,6 @@
                 <plugin id="TiledBg" />
                 <texture original-source="D:\New folder\Building pack\houseDarkBottomRight.png" />
             </object-type>
-            <object-type name="enemyslimeBlue" sid="871122489317736">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="588987664469769">
-                        <behavior id="solid" />
-                    </behavior-type>
-                    <behavior-type name="Platform" sid="268821778081192">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                    <behavior-type name="Sine" sid="345148659505270">
-                        <behavior id="Sin" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="128638086932241" speed="5">
-                        <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\Project\Game\New folder\Enemy sprites\slimeBlue.png">
-                            <collision-poly>
-                                <point x="0.142857" y="0.205882" />
-                                <point x="0.489796" y="0" />
-                                <point x="0.857143" y="0.205882" />
-                                <point x="0.979592" y="0.5" />
-                                <point x="0.938776" y="0.911765" />
-                                <point x="0.489796" y="1" />
-                                <point x="0.0612245" y="0.911765" />
-                                <point x="0.0204082" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="2" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="365957018736607" speed="5">
-                        <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\slimeBlue.png">
-                            <collision-poly>
-                                <point x="0.142857" y="0.205882" />
-                                <point x="0.489796" y="0" />
-                                <point x="0.857143" y="0.205882" />
-                                <point x="0.979592" y="0.5" />
-                                <point x="0.938776" y="0.911765" />
-                                <point x="0.489796" y="1" />
-                                <point x="0.0612245" y="0.911765" />
-                                <point x="0.0204082" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\slimeBlue_blue.png">
-                            <collision-poly>
-                                <point x="0.122807" y="0.233333" />
-                                <point x="0.491228" y="0.0333333" />
-                                <point x="0.877193" y="0.233333" />
-                                <point x="0.982456" y="0.5" />
-                                <point x="0.947368" y="0.9" />
-                                <point x="0.491228" y="1" />
-                                <point x="0.0526316" y="0.9" />
-                                <point x="0.0175439" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="2" loop="0" name="die" pingpong="0" repeatcount="1" repeatto="0" sid="306242825010318" speed="5">
-                        <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\slimeBlue_dead.png">
-                            <collision-poly>
-                                <point x="0.142857" y="0.205882" />
-                                <point x="0.489796" y="0" />
-                                <point x="0.857143" y="0.205882" />
-                                <point x="0.979592" y="0.5" />
-                                <point x="0.938776" y="0.911765" />
-                                <point x="0.489796" y="1" />
-                                <point x="0.0612245" y="0.911765" />
-                                <point x="0.0204082" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\slimeBlue_hit.png">
-                            <collision-poly>
-                                <point x="0.142857" y="0.205882" />
-                                <point x="0.489796" y="0" />
-                                <point x="0.857143" y="0.205882" />
-                                <point x="0.979592" y="0.5" />
-                                <point x="0.938776" y="0.911765" />
-                                <point x="0.489796" y="1" />
-                                <point x="0.0612245" y="0.911765" />
-                                <point x="0.0204082" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="enemyslimeBlueKey" sid="462716875449078">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -664,21 +597,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514980323860710" speed="5">
-                        <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\snail.png">
-                            <collision-poly>
-                                <point x="0.218182" y="0.3" />
-                                <point x="0.490909" y="0.025" />
-                                <point x="0.890909" y="0.15" />
-                                <point x="1" y="0.5" />
-                                <point x="0.963636" y="0.95" />
-                                <point x="0.490909" y="1" />
-                                <point x="0.0181818" y="0.975" />
-                                <point x="0.109091" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="2" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="988611132174830" speed="5">
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514980323860710" speed="5">
                         <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\snail.png">
                             <collision-poly>
                                 <point x="0.218182" y="0.3" />
@@ -775,21 +694,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="904276561903067" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\Player Green\playerGreen_up1.png">
-                            <collision-poly>
-                                <point x="0.184211" y="0.14" />
-                                <point x="0.5" y="0.02" />
-                                <point x="0.815789" y="0.14" />
-                                <point x="1" y="0.5" />
-                                <point x="0.684211" y="0.76" />
-                                <point x="0.5" y="0.98" />
-                                <point x="0.315789" y="0.76" />
-                                <point x="0" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="2" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="535957660815686" speed="5">
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="904276561903067" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\Player Green\playerGreen_up1.png">
                             <collision-poly>
                                 <point x="0.184211" y="0.14" />
@@ -1083,8 +988,8 @@
             <object-type name="sea" sid="761585966728521">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680659350835018" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Project\Game\New folder\Platformer Art Complete Pack\Base pack\Tiles\liquidWaterTop_mid.png">
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="680659350835018" speed="2">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Tiles\liquidWaterTop_mid.png">
                             <collision-poly>
                                 <point x="0.442857" y="0.442857" />
                                 <point x="0.5" y="0.414286" />
@@ -1093,6 +998,96 @@
                                 <point x="1" y="1" />
                                 <point x="0" y="1" />
                                 <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Tiles\liquidWaterTop_mid.png">
+                            <collision-poly>
+                                <point x="1" y="0.5" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.5" />
+                                <point x="0.371429" y="0.371429" />
+                                <point x="0.5" y="0.414286" />
+                                <point x="0.557143" y="0.442857" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="snowHalfSin" sid="321174916058849">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="750914337224362">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="788251055811000">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142133731466381" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Tiles\snowHalf.png">
+                            <collision-poly>
+                                <point x="0.0285714" y="0.0285714" />
+                                <point x="0.5" y="0" />
+                                <point x="0.971429" y="0.0285714" />
+                                <point x="0.985714" y="0.5" />
+                                <point x="0.571429" y="0.571429" />
+                                <point x="0.428571" y="0.571429" />
+                                <point x="0.0142857" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemy1" sid="934080800224242">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="919355389151666">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="549846487385173">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688919454511296" speed="5">
+                        <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\slimeBlue.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.205882" />
+                                <point x="0.489796" y="0" />
+                                <point x="0.857143" y="0.205882" />
+                                <point x="0.979592" y="0.5" />
+                                <point x="0.938776" y="0.911765" />
+                                <point x="0.489796" y="1" />
+                                <point x="0.0612245" y="0.911765" />
+                                <point x="0.0204082" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\slimeBlue_blue.png">
+                            <collision-poly>
+                                <point x="0.122807" y="0.233333" />
+                                <point x="0.491228" y="0.0333333" />
+                                <point x="0.877193" y="0.233333" />
+                                <point x="0.982456" y="0.5" />
+                                <point x="0.947368" y="0.9" />
+                                <point x="0.491228" y="1" />
+                                <point x="0.0526316" y="0.9" />
+                                <point x="0.0175439" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="die" pingpong="0" repeatcount="1" repeatto="0" sid="932695535977544" speed="5">
+                        <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="D:\New folder\_enemy\Enemies Level 1\slimeBlue_dead.png">
+                            <collision-poly>
+                                <point x="0.142857" y="0.205882" />
+                                <point x="0.489796" y="0" />
+                                <point x="0.857143" y="0.205882" />
+                                <point x="0.979592" y="0.5" />
+                                <point x="0.938776" y="0.911765" />
+                                <point x="0.489796" y="1" />
+                                <point x="0.0612245" y="0.911765" />
+                                <point x="0.0204082" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -1138,6 +1133,12 @@
                 </behavior-type>
                 <behavior-type name="BoundToLayout" sid="417625712870641">
                     <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="792762826110757">
+                    <behavior id="Flash" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="780227544513587">
+                    <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1239,7 +1240,7 @@
         <object-type name="flagYellow" sid="802442769669181">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299102685505819" speed="5">
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299102685505819" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\New folder\Base pack\Items\flagYellow2.png">
                         <collision-poly>
                             <point x="0.0285714" y="0.0285714" />
@@ -1473,44 +1474,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Heart" sid="359201330103810">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Anchor" sid="198962607374011">
-                    <behavior id="Anchor" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497619376433360" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="D:\New folder\Items\hud_heartFull.png">
-                        <collision-poly>
-                            <point x="0.185714" y="0.220339" />
-                            <point x="0.5" y="0.186441" />
-                            <point x="0.814286" y="0.220339" />
-                            <point x="0.857143" y="0.491525" />
-                            <point x="0.728571" y="0.677966" />
-                            <point x="0.5" y="0.898305" />
-                            <point x="0.271429" y="0.677966" />
-                            <point x="0.142857" y="0.491525" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="die" pingpong="0" repeatcount="1" repeatto="0" sid="312602441365606" speed="5">
-                    <frame duration="1" hotspotX="0.509434" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heartEmpty.png">
-                        <collision-poly>
-                            <point x="0.0943396" y="0.111111" />
-                            <point x="0.490566" y="0.0666667" />
-                            <point x="0.90566" y="0.111111" />
-                            <point x="0.962264" y="0.488889" />
-                            <point x="0.773585" y="0.733333" />
-                            <point x="0.490566" y="1" />
-                            <point x="0.207547" y="0.755556" />
-                            <point x="0.0188679" y="0.488889" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Glass" sid="327468496605334">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1585,9 +1548,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="FileChooser" sid="879064573648229">
-            <plugin id="filechooser" />
-        </object-type>
         <object-type name="Score" sid="578967940402044">
             <plugin id="Text" />
             <behaviors>
@@ -1642,10 +1602,10 @@
             <plugin id="TiledBg" />
             <texture original-source="D:\New folder\Ice pack\iceWaterDeep.png" />
         </object-type>
-        <object-type name="hud_heart3" sid="339553065458864">
+        <object-type name="Heart" sid="189638030261182">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="625585626116061" speed="5">
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149809612799750" speed="0">
                     <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart3.png">
                         <collision-poly>
                             <point x="0.030303" y="0.111111" />
@@ -1658,13 +1618,6 @@
                             <point x="0.00606061" y="0.488889" />
                         </collision-poly>
                     </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="hud_heart4" sid="203355360846716">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341313786767241" speed="5">
                     <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart2.png">
                         <collision-poly>
                             <point x="0.030303" y="0.111111" />
@@ -1677,13 +1630,6 @@
                             <point x="0.00606061" y="0.488889" />
                         </collision-poly>
                     </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="hud_heart1" sid="468104116878630">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306245854898933" speed="5">
                     <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart1.png">
                         <collision-poly>
                             <point x="0.030303" y="0.111111" />
@@ -1696,13 +1642,6 @@
                             <point x="0.00606061" y="0.488889" />
                         </collision-poly>
                     </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="hud_heart0" sid="737775804047149">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385535699004756" speed="5">
                     <frame duration="1" hotspotX="0.50303" hotspotY="0.511111" original-source="D:\New folder\Items\hud_heart0.png">
                         <collision-poly>
                             <point x="0.030303" y="0.111111" />
@@ -1722,17 +1661,11 @@
     <families>
         <family name="Enemy" plugin-id="Sprite" sid="204503599564974">
             <members>
+                <member>Enemy1</member>
                 <member>Enemy2</member>
-                <member>Enemy3</member>
                 <member>Enemy4</member>
-                <member>enemyslimeBlue</member>
                 <member>enemyslimeBlueKey</member>
             </members>
-            <behaviors>
-                <behavior-type name="EnemySolid" sid="880387115956954">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
         </family>
         <family name="Flag" plugin-id="Sprite" sid="404974787184239">
             <members>

@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout active="1" order="0">Level 1</layout>
-        <layout order="3">Level 2</layout>
         <layout order="2">King Level 1</layout>
+        <layout order="3">Level 2</layout>
         <event-sheet order="1">Event sheet 1</event-sheet>
         <event-sheet order="4">Event sheet 2</event-sheet>
     </open-tabs>
@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1">
-        <family expanded="0" name="Enemy" />
+        <family expanded="1" name="Enemy" />
         <family expanded="0" name="Flag" />
     </families-expanded>
     <folders-expanded>
@@ -46,7 +46,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/cloud3/" />
         <folder expanded="1" path="animation-folder/snowHillLeft3/" />
         <folder expanded="1" path="animation-folder/snowHillRight3/" />
-        <folder expanded="1" path="animation-folder/enemyslimeBlue/" />
         <folder expanded="1" path="animation-folder/enemyslimeBlueKey/" />
         <folder expanded="1" path="animation-folder/background/" />
         <folder expanded="1" path="animation-folder/Enemy2/" />
@@ -62,6 +61,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SnowSlice15/" />
         <folder expanded="1" path="animation-folder/SnowSlice16/" />
         <folder expanded="1" path="animation-folder/sea/" />
+        <folder expanded="1" path="animation-folder/snowHalfSin/" />
+        <folder expanded="1" path="animation-folder/Enemy1/" />
         <folder expanded="1" path="animation-folder/flagBlue/" />
         <folder expanded="1" path="animation-folder/Protagonist/" />
         <folder expanded="1" path="animation-folder/KeyBlue/" />
@@ -79,16 +80,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SnowHill/" />
         <folder expanded="1" path="animation-folder/SnowWave/" />
         <folder expanded="1" path="animation-folder/SpikesBottom/" />
-        <folder expanded="1" path="animation-folder/Heart/" />
         <folder expanded="1" path="animation-folder/Glass/" />
         <folder expanded="1" path="animation-folder/LadderTop/" />
         <folder expanded="1" path="animation-folder/LadderMid/" />
         <folder expanded="1" path="animation-folder/coin/" />
         <folder expanded="1" path="animation-folder/scoreCoin/" />
         <folder expanded="1" path="animation-folder/Canon/" />
-        <folder expanded="1" path="animation-folder/hud_heart3/" />
-        <folder expanded="1" path="animation-folder/hud_heart4/" />
-        <folder expanded="1" path="animation-folder/hud_heart1/" />
-        <folder expanded="1" path="animation-folder/hud_heart0/" />
+        <folder expanded="1" path="animation-folder/Heart/" />
     </folders-expanded>
 </c2uistate>
